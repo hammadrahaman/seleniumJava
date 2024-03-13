@@ -25,38 +25,4 @@ public class TestCase extends utility {
 
 
     }
-    @Test(priority=1,description="Test3",alwaysRun=true)
-
-    public void loginValidation(){
-        Actions login=new Actions();
-        SessionId s=((RemoteWebDriver)driver).getSessionId();
-        System.out.println("SessionID1:"+s);
-        login.visitLoginUrl();
-        login.visitLoginPage();
-        login.enterEmailLogin();
-        login.enterPassword();
-        sleep.mediumWait();
-        login.loginToAccount();
-//driver.close();
-    }
-    @Test(priority=1,description="Test3",alwaysRun=true)
-
-    public void loginValidation1(){
-        Actions login=new Actions();
-        SessionId s=((RemoteWebDriver)driver).getSessionId();
-        System.out.println("SessionID1:"+s);
-        login.visitLoginUrl();
-        login.visitLoginPage();
-        login.enterEmailLogin();
-        login.enterPassword();
-        sleep.mediumWait();
-        login.loginToAccount();
-//driver.close();
-    }
-
-    @Test(priority=1,description="Test3",alwaysRun=true)
-    public void registration(){
-
-    }
-
 }
