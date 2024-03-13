@@ -22,7 +22,5 @@ public class TestCase extends utility {
         registerAccount.reEnterPassword();
         registerAccount.registerBtn();
         sleep.mediumWait();
-
-
     }
 }

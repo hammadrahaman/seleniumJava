@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class LOpsTestCase extends utility {
 
 
-    @Test(priority = 0, alwaysRun = true)
+    @Test(priority = -1, alwaysRun = true)
     public void registration(){
         LOpsReg register = new LOpsReg();
         register.visitRegistrationPage();
@@ -27,9 +27,15 @@ public class LOpsTestCase extends utility {
         register.searchTabClick();
         register.openEmailMailinator();
         register.clickActivationLink();
-       String fakeDot = register.fakeDot;
-       System.out.println(" from second test: "+fakeDot);
-       // System.out.println();
        sleep.highWait();
+    }
+
+    @Test(priority = 0, alwaysRun = true)
+    public void loginAndValidate(){
+        LOpsReg login = new LOpsReg();
+        login.visitQA();
+        login.enterCredentials();
+        login.clickSignIn();
+        sleep.highWait();
     }
 }

@@ -37,6 +37,10 @@ public class LOpsReg extends Commands {
    private static By searchMailinatorEmail ;
    private static By clickSearch;
    private static By selectEmailMailinator;
+    private static By dot;
+    private static By loadEmail;
+private static By loginBtn;
+    private static By loadPassword;
 
 
 
@@ -56,6 +60,12 @@ public class LOpsReg extends Commands {
         searchMailinatorEmail = By.cssSelector("input#search-mobile");
         clickSearch = By.xpath("//button[@aria-label='Search for inbox']");
         selectEmailMailinator = By.xpath("//td[normalize-space()='Welcome to LoadOps!']");
+        loginBtn = By.cssSelector("button#login-btn");
+        dot = By.xpath("(//input[@class='MuiInputBase-input MuiOutlinedInput-input css-1n7222t'])[1]");
+        loadEmail = By.xpath("(//input[@class='MuiInputBase-input MuiOutlinedInput-input css-1n7222t'])[2]");
+        loadPassword = By.xpath("(//input[@class='MuiInputBase-input MuiOutlinedInput-input css-1n7222t'])[3]");
+
+
     }
 
 
@@ -113,5 +123,20 @@ public class LOpsReg extends Commands {
     public void clickActivationLink(){
         driver.switchTo().frame(driver.findElement(By.cssSelector("iframe#html_msg_body"))); // switching to iframe
         driver.findElement(By.xpath("//a[@class='link_text']")).click();
+    }
+
+    public void visitQA(){
+        driver.navigate().to("https://qa.loadops.com/");
+    }
+
+    public  void enterCredentials(){
+        setText(dot, fakeDot);
+        setText(loadEmail,"nick13@mailinator.com");
+        setText(loadPassword, "tarzan@1");
+        sleep.mediumWait();
+    }
+
+    public void clickSignIn(){
+        waitClick(loginBtn);
     }
 }
