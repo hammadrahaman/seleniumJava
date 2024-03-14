@@ -82,9 +82,9 @@ public class Actions extends Commands{
 
     public void qaLoad(){
         System.out.println("The driver: "+ driver);
-     setText(dot, "9040");
-     setText(loadEmail,"ham@mailinator.com");
-     setText(loadPassword, "National@1");
+         setText(dot, "9040");
+         setText(loadEmail,"ham@mailinator.com");
+         setText(loadPassword, "National@1");
         sleep.mediumWait();
     }
 

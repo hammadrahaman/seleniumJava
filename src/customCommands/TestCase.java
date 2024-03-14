@@ -16,6 +16,7 @@ public class TestCase extends utility {
         Actions registerAccount=new Actions();
         SessionId s=((RemoteWebDriver)driver).getSessionId();
         System.out.println("SessionID1:"+s);
+        driver.navigate().to("https://qtripdynamic-qa-frontend.vercel.app/");
         registerAccount.registerPage();
         registerAccount.enterEmail();
         registerAccount.enterPassword();

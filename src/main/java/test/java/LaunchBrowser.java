@@ -27,7 +27,7 @@ public class LaunchBrowser {
         WebDriverManager.firefoxdriver().setup();
         FirefoxOptions down = new FirefoxOptions();
         down.addArguments("--headless");
-         driver = new FirefoxDriver();
+         driver = new FirefoxDriver(down);
     }
 
 
