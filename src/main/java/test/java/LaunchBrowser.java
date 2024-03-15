@@ -24,10 +24,10 @@ public class LaunchBrowser {
     }
 
     public  static void setDriver() {
-        WebDriverManager.firefoxdriver().setup();
-        FirefoxOptions down = new FirefoxOptions();
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions down = new ChromeOptions();
         down.addArguments("--headless");
-         driver = new FirefoxDriver(down);
+         driver = new ChromeDriver(down);
     }
 
 

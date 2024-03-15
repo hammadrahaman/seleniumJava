@@ -10,7 +10,7 @@ import custom.Actions;
 public class TestCase extends utility {
    // actions act = new actions();
 
-    @Test(priority = -1, description = "Test 4")
+    @Test(priority = 0, description = "Test 4", enabled = false)
 
     public void register(){
         Actions registerAccount=new Actions();

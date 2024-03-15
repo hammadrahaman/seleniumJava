@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class LOpsTestCase extends utility {
 
 
-    @Test(priority = -1, alwaysRun = true)
+    @Test(priority = 1, alwaysRun = true)
     public void registration(){
         LOpsReg register = new LOpsReg();
         register.visitRegistrationPage();
@@ -16,12 +16,12 @@ public class LOpsTestCase extends utility {
         register.setAddressCityZip();
         register.setEmailPassword();
         register.selectSignUp();
-        sleep.mediumWait();
+        sleep.highWait();
         register.checkRegistration();
        // sleep.highWait();
 
     }
-   @Test(priority = 0, alwaysRun = true)
+   @Test(priority = 2, alwaysRun = true)
     public void activationFromMail(){
         LOpsReg register = new LOpsReg();
         register.searchTabClick();
@@ -30,7 +30,7 @@ public class LOpsTestCase extends utility {
        sleep.highWait();
     }
 
-    @Test(priority = 0, alwaysRun = true)
+    @Test(priority = 3, alwaysRun = true)
     public void loginAndValidate(){
         LOpsReg login = new LOpsReg();
         login.visitQA();

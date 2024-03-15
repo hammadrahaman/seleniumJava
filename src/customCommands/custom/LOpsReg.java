@@ -1,6 +1,7 @@
 package custom;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import test.java.Fake;
 
@@ -41,7 +42,7 @@ public class LOpsReg extends Commands {
     private static By loadEmail;
 private static By loginBtn;
     private static By loadPassword;
-
+    private static By activationBtn;
 
 
     public LOpsReg(){
@@ -64,7 +65,7 @@ private static By loginBtn;
         dot = By.xpath("(//input[@class='MuiInputBase-input MuiOutlinedInput-input css-1n7222t'])[1]");
         loadEmail = By.xpath("(//input[@class='MuiInputBase-input MuiOutlinedInput-input css-1n7222t'])[2]");
         loadPassword = By.xpath("(//input[@class='MuiInputBase-input MuiOutlinedInput-input css-1n7222t'])[3]");
-
+    activationBtn=     By.xpath("//a[@class='link_text']");
 
     }
 
@@ -121,8 +122,12 @@ private static By loginBtn;
     }
 
     public void clickActivationLink(){
-        driver.switchTo().frame(driver.findElement(By.cssSelector("iframe#html_msg_body"))); // switching to iframe
-        driver.findElement(By.xpath("//a[@class='link_text']")).click();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, -500);");
+        driver.switchTo().frame(driver.findElement(By.cssSelector("iframe#html_msg_body")));// switching to iframe
+        js.executeScript("window.scrollBy(0, -500);");
+        waitClick(activationBtn);
+
     }
 
     public void visitQA(){
