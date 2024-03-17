@@ -22,7 +22,7 @@ jobs:
           distribution: 'adopt'  # or 'temurin'
 
       - name: Build with Maven
-        run: mvn clean install -DskipTests=true
+        run: mvn clean install
 
       - name: Run Selenium Tests
         run: mvn test
