@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Qtrip-testcase"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="55.679">
+    <properties></properties>
+
+
+
+            <testcase
+                name="activationFromMail"
+                time="14.612"
+                classname="LOpsTestCase">
+            </testcase>
+            <testcase
+                name="registration"
+                time="18.799"
+                classname="LOpsTestCase">
+            </testcase>
+            <testcase
+                name="loginAndValidate"
+                time="22.268"
+                classname="LOpsTestCase">
+            </testcase>
+</testsuite>
