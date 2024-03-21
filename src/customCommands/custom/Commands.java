@@ -14,7 +14,7 @@ public class Commands {
     SoftAssert check = new SoftAssert();
 
     public Commands(WebDriver driver) {
-        this.driver = LaunchBrowser.getDriver();  // this initialization was the issue
+        Commands.driver = LaunchBrowser.getDriver();  // this initialization was the issue
     }
 
 

@@ -20,20 +20,20 @@ public class LOpsReg extends Commands {
     private static By signUp;
 
     private static By verification;
-    private static String fakeCompanyName = Fake.fake("company");
-    private static String fakeFirstName = Fake.fake("first name");
+    private static final String fakeCompanyName = Fake.fake("company");
+    private static final String fakeFirstName = Fake.fake("first name");
 
-    private static String fakeLastName = Fake.fake("last name");
+    private static final String fakeLastName = Fake.fake("last name");
 
     public static final String fakeDot= Fake.fake("dot");
 
-    private static String fakeZip = Fake.fake("zip");
+    private static final String fakeZip = Fake.fake("zip");
 
-    private static String fakeCity = Fake.fake("city");
+    private static final String fakeCity = Fake.fake("city");
 
-    private static String fakeAddress = Fake.fake("address");
+    private static final String fakeAddress = Fake.fake("address");
 
-    private static String validationMessage = "Complete Verification";
+    private static final String validationMessage = "Complete Verification";
 
    private static By searchMailinatorEmail ;
    private static By clickSearch;

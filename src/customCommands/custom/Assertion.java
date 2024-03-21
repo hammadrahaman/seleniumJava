@@ -14,7 +14,7 @@ public class Assertion {
     protected static WebDriver driver ;
 
     public Assertion(){
-        this.driver = LaunchBrowser.getDriver();
+        driver = LaunchBrowser.getDriver();
     }
 
     public  void verificationeMessage(By locator, String expectedText, String errorMessage){

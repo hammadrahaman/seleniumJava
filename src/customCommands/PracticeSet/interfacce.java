@@ -11,8 +11,8 @@ public class interfacce {
 
 
 interface veg{
-    public void chiliColor();
-    public void eggPlant();
+    void chiliColor();
+    void eggPlant();
 
 }
 
