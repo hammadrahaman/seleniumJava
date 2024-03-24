@@ -24,11 +24,13 @@ public class VegCard {
     }
 
     public static void main(String[] args) {
-
+       int desired_width = 1280;
+       int desired_height = 720;
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");//ChromeOptions
         WebDriver driver = new ChromeDriver();
+        options.addArguments("--window-size=" + desired_width + "," + desired_height);
         driver.manage().window().maximize();
         driver.navigate().to("https://rahulshettyacademy.com/seleniumPractise/#/");
         List<WebElement> carts = driver.findElements(By.xpath("//div[@class='products']//div"));
