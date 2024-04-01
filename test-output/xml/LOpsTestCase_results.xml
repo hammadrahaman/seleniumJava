@@ -4,24 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="55.679">
+           time="66.084">
     <properties></properties>
 
 
 
             <testcase
-                name="activationFromMail"
-                time="14.612"
-                classname="LOpsTestCase">
-            </testcase>
-            <testcase
                 name="registration"
-                time="18.799"
+                time="19.309"
                 classname="LOpsTestCase">
             </testcase>
             <testcase
                 name="loginAndValidate"
-                time="22.268"
+                time="32.704"
+                classname="LOpsTestCase">
+            </testcase>
+            <testcase
+                name="activationFromMail"
+                time="14.071"
                 classname="LOpsTestCase">
             </testcase>
 </testsuite>
