@@ -40,7 +40,7 @@ public class LOpsReg extends Commands {
    private static By selectEmailMailinator;
     private static By dot;
     private static By loadEmail;
-private static By loginBtn;
+    private static By loginBtn;
     private static By loadPassword;
     private static By activationBtn;
 
@@ -65,7 +65,7 @@ private static By loginBtn;
         dot = By.xpath("(//input[@class='MuiInputBase-input MuiOutlinedInput-input css-1n7222t'])[1]");
         loadEmail = By.xpath("(//input[@class='MuiInputBase-input MuiOutlinedInput-input css-1n7222t'])[2]");
         loadPassword = By.xpath("(//input[@class='MuiInputBase-input MuiOutlinedInput-input css-1n7222t'])[3]");
-    activationBtn=     By.xpath("//a[@class='link_text']");
+        activationBtn=     By.xpath("//a[@class='link_text']");
 
     }
 
@@ -82,7 +82,6 @@ private static By loginBtn;
     public void setFirstLastname(){
         setText(firstName, fakeFirstName);
         setText(lastName,fakeLastName);
-
     }
 
     public void setAddressCityZip(){
