@@ -1,5 +1,7 @@
 package PracticeSet;
 
+import org.testng.annotations.Test;
+
 import java.util.Scanner;
 
 
@@ -38,4 +40,6 @@ public class Asquare {
         int finalResult = (int)result;
         System.out.printf("The result of a+b square is %d", finalResult);
     }
+
+
 }

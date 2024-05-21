@@ -58,7 +58,6 @@ public class VegCard {
                     System.out.println("Check Btn " + a);
                     addToCartBtn.click();
                     driver.findElement(By.cssSelector("a.cart-icon")).click();
-
                 }
             }
         }

@@ -44,7 +44,6 @@ public class Actions extends Commands{
     }
 
     public void enterPassword(){
-
         setText(password, "National@1");
     }
 

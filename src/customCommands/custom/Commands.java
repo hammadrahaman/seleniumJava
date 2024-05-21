@@ -14,7 +14,7 @@ public class Commands {
     SoftAssert check = new SoftAssert();
 
     public Commands(WebDriver driver) {
-        Commands.driver = LaunchBrowser.getDriver();  // this initialization was the issue
+        Commands.driver = LaunchBrowser.getDriver();  // this initialization was the issue built a constructor.
     }
 
 
@@ -44,9 +44,6 @@ public class Commands {
         check.assertAll();
         return true;
     }
-
-
-
 
 
 }

@@ -1,14 +1,9 @@
 package test.java;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.chromium.ChromiumDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.safari.SafariOptions;
 
 public class LaunchBrowser {
 
@@ -26,7 +21,7 @@ public class LaunchBrowser {
     public  static void setDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions down = new ChromeOptions();
-        down.addArguments("--headless");
+        //down.addArguments("--headless");
          driver = new ChromeDriver(down);
     }
 

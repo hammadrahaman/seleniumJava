@@ -1,0 +1,1 @@
+{"uuid":"621c6309-cbee-485f-b1e5-4ce63bf69f1e","name":"maj.utility.opnBrw","children":["c367b9c5-8b62-4c45-b588-d490157d238f"],"description":"","befores":[{"name":"opnBrw","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1714371933320,"stop":1714371935337}],"afters":[],"start":1714371933320,"stop":1714371935337}

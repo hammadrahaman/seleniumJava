@@ -2,11 +2,11 @@ import custom.LOpsReg;
 import custom.sleep;
 import maj.utility;
 import org.testng.annotations.Test;
-
+import custom.com.dp.check;
 public class LOpsTestCase extends utility {
 
 
-    @Test(priority = 1, alwaysRun = true)
+    @Test(priority = 1, alwaysRun = false)
     public void registration(){
         LOpsReg register = new LOpsReg();
         register.visitRegistrationPage();
@@ -21,7 +21,7 @@ public class LOpsTestCase extends utility {
        // sleep.highWait();
 
     }
-   @Test(priority = 2, alwaysRun = true)
+   @Test(priority = 2, alwaysRun = false)
     public void activationFromMail(){
         LOpsReg register = new LOpsReg();
         register.searchTabClick();
@@ -37,5 +37,10 @@ public class LOpsTestCase extends utility {
         login.enterCredentials();
         login.clickSignIn();
         sleep.highWait();
+    }
+
+    @Test(priority = -1, alwaysRun = true)
+    public void dp(){
+    check.login();
     }
 }
