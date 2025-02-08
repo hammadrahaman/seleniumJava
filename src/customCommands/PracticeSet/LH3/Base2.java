@@ -14,8 +14,9 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-import static PracticeSet.LH.waits.*;
-
+import static PracticeSet.LH.waits.wait1s;
+import static PracticeSet.LH.waits.wait4s;
+import static PracticeSet.LH3.waits.wait2s;
 
 public class Base2 {
 
@@ -28,7 +29,7 @@ public class Base2 {
         ChromeOptions options = new ChromeOptions();
         WebDriverManager.chromedriver().setup();
         options.addArguments("--incognito");
-        // options.addArguments("--headless");
+    //    options.addArguments("--headless");
         options.addArguments("--disable-gpu");
         options.addArguments("--window-size=1920,1080");
 
@@ -49,13 +50,14 @@ public class Base2 {
         driver.findElement(By.xpath("//*[@type='submit']")).click();
         WebElement passwordField = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@type='password']")));
         // passwordField.sendKeys(Keys.COMMAND, "a", Keys.BACK_SPACE);
-        wait1s();
+
         passwordField.sendKeys("gjpqWEBvDJ2sq#M6");
         wait1s();
+        wait2s();
         WebElement signIn = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@type='submit']")));
+
         signIn.click();
-       /* WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//form[@id='kc-form-login']//input[@name='login']")));
-        loginButton.click();*/
+
         wait4s();
         return driver;
     }

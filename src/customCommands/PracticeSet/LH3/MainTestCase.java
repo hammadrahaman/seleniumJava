@@ -7,7 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class MainTestCase extends Base {
+public class MainTestCase extends Base2 {
 
     @BeforeTest
     public void setup() {
@@ -17,10 +17,18 @@ public class MainTestCase extends Base {
 
 @Test(priority = 1, enabled = true)
 public void shipmentByDestination(){
-    ShipmentByDestination filters = new ShipmentByDestination(driver);
-       filters.main();
+    ShipmentByDestinationRough filters = new ShipmentByDestinationRough(driver);
+        filters.main();
        filters.multiFilter();
 
+}
+
+@Test(priority = 1, enabled = true)
+public void allShipments(){
+        AllShipments filter = new AllShipments(driver);
+        filter.selectLanes();
+        filter.selectAllShipments();
+        filter.filterLogic();
 }
 
     @Test(priority = 1, enabled = true)
