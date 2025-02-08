@@ -18,8 +18,4 @@ public class code {
         Assert.assertNull(searchButton, "Submit button should be empty initially");
         driver.quit();
     }
-
-
-
-
 }

@@ -12,11 +12,9 @@ import java.time.Duration;
 public class Commands {
     protected static WebDriver driver ;
     SoftAssert check = new SoftAssert();
-
     public Commands(WebDriver driver) {
         Commands.driver = LaunchBrowser.getDriver();  // this initialization was the issue built a constructor.
     }
-
 
 
     public static WebElement getElement(By locator){
@@ -24,7 +22,6 @@ public class Commands {
     }
 
     public static void setText(By locator, String text){
-
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(40));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator)).sendKeys(text);
     }

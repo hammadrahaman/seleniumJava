@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PersonalProject-1"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="275.119">
+    <properties></properties>
+
+
+
+            <testcase
+                name="check"
+                time="275.119"
+                classname="PracticeSet.LH3.MainTestCase">
+            </testcase>
+</testsuite>

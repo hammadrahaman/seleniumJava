@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PersonalProject-1"
+           tests="5"
+           failures="1"
+           errors="0"
+           skipped="4"
+           time="18.536">
+    <properties></properties>
+
+            <testcase
+                name="setup"
+                time="18.536"
+                classname="PracticeSet.LH.MainTestCase">
+
+            <failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for presence of element located by: By.xpath: //form[@id=&apos;kc-form-login&apos;]//input[@id=&apos;username&apos;] (tried for 10 second(s) with 500 milliseconds interval)">
+                <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //form[@id='kc-form-login']//input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+                org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)PracticeSet.LH.Base.initializeDriver(Base.java:41)PracticeSet.LH.MainTestCase.setup(MainTestCase.java:13)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)java.base/java.lang.reflect.Method.invoke(Method.java:580)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)org.testng.TestRunner.beforeRun(TestRunner.java:650)org.testng.TestRunner.run(TestRunner.java:612)org.testng.SuiteRunner.runTest(SuiteRunner.java:443)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)org.testng.SuiteRunner.run(SuiteRunner.java:336)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)org.testng.TestNG.runSuitesLocally(TestNG.java:1228)org.testng.TestNG.runSuites(TestNG.java:1134)org.testng.TestNG.run(TestNG.java:1101)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+                    Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//form[@id='kc-form-login']//input[@id='username']"}
+  (Session info: chrome=131.0.6778.267)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0c99316c1c5ab76d5f28d564dcf659f0, findElement {value=//form[@id='kc-form-login']//input[@id='username'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: /var/folders/v6/f79xz9g106g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56810}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56810/devtoo..., se:cdpVersion: 131.0.6778.267, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c99316c1c5ab76d5f28d564dcf659f0
+                    java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)PracticeSet.LH.Base.initializeDriver(Base.java:41)PracticeSet.LH.MainTestCase.setup(MainTestCase.java:13)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)java.base/java.lang.reflect.Method.invoke(Method.java:580)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)org.testng.TestRunner.beforeRun(TestRunner.java:650)org.testng.TestRunner.run(TestRunner.java:612)org.testng.SuiteRunner.runTest(SuiteRunner.java:443)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)org.testng.SuiteRunner.run(SuiteRunner.java:336)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)org.testng.TestNG.runSuitesLocally(TestNG.java:1228)org.testng.TestNG.runSuites(TestNG.java:1134)org.testng.TestNG.run(TestNG.java:1101)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+                ]]>
+            </failure>
+    </testcase>
+
+            <testcase
+                name="closeBrowser"
+                time="0.0"
+                classname="PracticeSet.LH.MainTestCase">
+            </testcase>
+            <testcase
+                name="calc"
+                time="0.0"
+                classname="PracticeSet.LH.MainTestCase">
+            </testcase>
+            <testcase
+                name="oiu"
+                time="0.0"
+                classname="PracticeSet.LH.MainTestCase">
+            </testcase>
+            <testcase
+                name="weightCubeHandling"
+                time="0.0"
+                classname="PracticeSet.LH.MainTestCase">
+            </testcase>
+
+</testsuite>

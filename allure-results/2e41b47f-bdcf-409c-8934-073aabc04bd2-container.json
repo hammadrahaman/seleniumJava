@@ -1,0 +1,1 @@
+{"uuid":"2e41b47f-bdcf-409c-8934-073aabc04bd2","name":"maj.utility.closeBrowser","children":["525fadca-4b22-41d0-adc0-2a409d6ec551"],"description":"","befores":[],"afters":[{"name":"closeBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1719206586037,"stop":1719206586143}],"start":1719206586036,"stop":1719206586143}
