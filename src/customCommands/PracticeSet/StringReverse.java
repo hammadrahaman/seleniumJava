@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class StringReverse {
     public static void main(String[] args) {
-        String name = "Tasmiya";
+        String name = "Tuh";
         StringBuilder baigan = new StringBuilder(name);
         System.out.println(baigan);
         String reverse = baigan.reverse().toString();
